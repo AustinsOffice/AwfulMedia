@@ -1,2 +1,3 @@
-# AwfulMedia
-AwfulMedia
+# The New
+
+AwfulMedia's new theme!

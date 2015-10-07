@@ -12,7 +12,7 @@
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif%7COpen+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" >
 
@@ -21,25 +21,22 @@
 </head>
 <body class="{{body_class}}">
     <div class="container-fluid">
-        
         <div class="row">
-            <div class="col-md-12 brand">
-                <img id="logo" src="{{@blog.logo}}" alt="AwfulMedia"/>
+            <div class="col-md-4 brand">
+                <a href="{{@blog.url}}"><img id="logo" src="{{@blog.logo}}" alt="AwfulMedia"/></a>
             </div>
-            <nav class="col-md-12 main-nav">
+            <nav class="col-md-8 main-nav">
                 {{navigation}}
             </nav>
         </div>
-
         {{{body}}}
-
         <footer class="site-footer row">
-            <section class="copyright col-md-12"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby col-md-12">Crafted using <a href="http://www.nodejs.org/"> Node.js</a> and <a href="https://ghost.org">Ghost</a></section>
+            <div class="copyright col-md-12">
+                &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a><br>
+                Crafted with <a href="https://ghost.org">Ghost</a>. Brought to you on <a href="http://www.digitalocean.com/">DigitalOcean</a>.
+            </div>
         </footer>
-
     </div>
 {{ghost_foot}}
-
 </body>
 </html>

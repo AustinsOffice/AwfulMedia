@@ -6,7 +6,8 @@ body {
   background: #ffffff;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.1; }
+  line-height: 1.1;
+  padding: 0 1.5em; }
 
 a {
   color: #313131; }
@@ -14,13 +15,17 @@ a {
     color: #9236ff;
     text-decoration: none; }
 
-p {
-  font-size: 1.4em;
-  line-height: 1.5em; }
-  p a {
-    color: #9236ff; }
-    p a:hover {
-      color: #bb83ff; }
+p, ul, ol, pre, table {
+  font-size: 1.25em;
+  line-height: 1.65; }
+
+p a {
+  color: #9236ff; }
+  p a:hover {
+    color: #bb83ff; }
+
+svg {
+  max-height: 100%; }
 
 h1,
 h2,
@@ -29,32 +34,33 @@ h4,
 h5,
 h6 {
   font-family: 'Droid Serif', serif;
-  margin-top: 1.5em; }
+  margin: 2em 0 .8em; }
 
 h1 {
-  font-size: 2.75em; }
-
-h2 {
-  font-size: 2.5em; }
-
-h3 {
   font-size: 2.25em; }
 
-h4 {
+h2 {
   font-size: 2em; }
 
-h5 {
+h3 {
   font-size: 1.75em; }
 
-h6 {
+h4 {
   font-size: 1.5em; }
 
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
 ul, ol {
-  line-height: 1.5em;
-  font-size: 1.3em;
   margin-left: 1.5em; }
   ul ul, ol ul {
     font-size: 1em; }
+
+pre, table, blockquote {
+  margin: 3em 0; }
 
 .container-fluid {
   margin-right: auto;
@@ -63,17 +69,26 @@ ul, ol {
   /* or 950px */ }
 
 .brand {
-  text-align: center;
-  margin-top: 4em; }
+  text-align: left;
+  margin-top: 2em; }
+  @media screen and (max-width: 991px) {
+    .brand {
+      text-align: center; } }
   .brand #logo {
-    max-width: 175px; }
+    max-width: 175px;
+    max-height: 225px; }
 
 .main-nav {
-  font-family: "Droid Serif", serif;
-  text-align: center;
-  margin-top: 1.25em; }
+  font-family: "Open Sans", serif;
+  text-align: right;
+  margin-top: 6.725em; }
+  @media screen and (max-width: 991px) {
+    .main-nav {
+      margin-top: 2em;
+      text-align: center; } }
   .main-nav ul {
     font-size: 1.5em;
+    text-transform: uppercase;
     padding: 0;
     margin: 0;
     list-style-type: none; }
@@ -97,18 +112,27 @@ ul, ol {
 
 .post {
   margin-top: 4.5em; }
+  .post img {
+    max-width: 100%;
+    display: block; }
   .post .post-title {
     font-size: 2.75em; }
-  .post .post-meta {
+  .post .post-title.loop-display {
+    font-size: 2.25em; }
+  .post .post-meta, .post time {
     margin: 0;
     color: #888888; }
-    .post .post-meta a {
-      color: #888888; }
+    .post .post-meta a, .post time a {
+      color: #9236ff; }
+      .post .post-meta a:hover, .post time a:hover {
+        color: #bb83ff; }
   .post h1, .post h2:first-child {
     margin-top: .25em; }
 
 footer.site-footer {
   margin: 4em 0;
   text-align: center; }
+  footer.site-footer .copyright {
+    line-height: 1.5; }
 
 /*# sourceMappingURL=app.css.map */
