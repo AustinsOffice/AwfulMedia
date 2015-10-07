@@ -1,0 +1,114 @@
+*, *::after, *::before {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #ffffff;
+  color: #484848;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.1; }
+
+a {
+  color: #313131; }
+  a:hover {
+    color: #9236ff;
+    text-decoration: none; }
+
+p {
+  font-size: 1.4em;
+  line-height: 1.5em; }
+  p a {
+    color: #9236ff; }
+    p a:hover {
+      color: #bb83ff; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Droid Serif', serif;
+  margin-top: 1.5em; }
+
+h1 {
+  font-size: 2.75em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 2.25em; }
+
+h4 {
+  font-size: 2em; }
+
+h5 {
+  font-size: 1.75em; }
+
+h6 {
+  font-size: 1.5em; }
+
+ul, ol {
+  line-height: 1.5em;
+  font-size: 1.3em;
+  margin-left: 1.5em; }
+  ul ul, ol ul {
+    font-size: 1em; }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 750px;
+  /* or 950px */ }
+
+.brand {
+  text-align: center;
+  margin-top: 4em; }
+  .brand #logo {
+    max-width: 175px; }
+
+.main-nav {
+  font-family: "Droid Serif", serif;
+  text-align: center;
+  margin-top: 1.25em; }
+  .main-nav ul {
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; }
+  .main-nav li {
+    display: inline-block; }
+    .main-nav li a {
+      padding: .3em; }
+      .main-nav li a:hover {
+        background: none; }
+
+.pagination {
+  text-align: center;
+  margin: 2em 0;
+  padding: 0; }
+  .pagination .newer-posts {
+    position: absolute;
+    left: 0; }
+  .pagination .older-posts {
+    position: absolute;
+    right: 0; }
+
+.post {
+  margin-top: 4.5em; }
+  .post .post-title {
+    font-size: 2.75em; }
+  .post .post-meta {
+    margin: 0;
+    color: #888888; }
+    .post .post-meta a {
+      color: #888888; }
+  .post h1, .post h2:first-child {
+    margin-top: .25em; }
+
+footer.site-footer {
+  margin: 4em 0;
+  text-align: center; }
+
+/*# sourceMappingURL=app.css.map */
