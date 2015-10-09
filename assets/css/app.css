@@ -59,8 +59,11 @@ ul, ol {
   ul ul, ol ul {
     font-size: 1em; }
 
-pre, table, blockquote {
+table, blockquote {
   margin: 3em 0; }
+
+pre {
+  margin: 1.25em 0 3em; }
 
 .container-fluid {
   margin-right: auto;
@@ -88,14 +91,13 @@ pre, table, blockquote {
       text-align: center; } }
   .main-nav ul {
     font-size: 1.5em;
-    text-transform: uppercase;
     padding: 0;
     margin: 0;
     list-style-type: none; }
   .main-nav li {
     display: inline-block; }
     .main-nav li a {
-      padding: .3em; }
+      padding: .3em .8em; }
       .main-nav li a:hover {
         background: none; }
 
