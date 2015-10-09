@@ -19,10 +19,12 @@ p, ul, ol, pre, table {
   font-size: 1.25em;
   line-height: 1.65; }
 
-p a {
-  color: #9236ff; }
-  p a:hover {
-    color: #bb83ff; }
+p {
+  margin: 1.2em 0; }
+  p a {
+    color: #9236ff; }
+    p a:hover {
+      color: #bb83ff; }
 
 svg {
   max-height: 100%; }

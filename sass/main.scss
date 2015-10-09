@@ -28,6 +28,7 @@ p, ul, ol, pre, table {
 }
 
 p {
+  margin: 1.2em 0;
   a {
     color: $nav-link-color-hover;
     &:hover {
