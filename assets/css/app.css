@@ -8,6 +8,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.1;
   padding: 0 1.5em; }
+  @media screen and (max-width: 750px) {
+    body {
+      font-size: 1.1em; } }
 
 a {
   color: #313131; }
@@ -93,11 +96,8 @@ pre {
 .main-nav {
   font-family: "Open Sans", serif;
   text-align: right;
-  margin-top: 6.725em; }
-  @media screen and (max-width: 991px) {
-    .main-nav {
-      margin-top: 2em;
-      text-align: center; } }
+  margin-top: 6.725em;
+  padding: 0; }
   .main-nav ul {
     font-size: 1.5em;
     padding: 0;
@@ -105,10 +105,18 @@ pre {
     list-style-type: none; }
   .main-nav li {
     display: inline-block; }
-    .main-nav li a {
-      padding: .3em .8em; }
-      .main-nav li a:hover {
-        background: none; }
+    .main-nav li a:hover {
+      background: none; }
+  @media screen and (max-width: 991px) {
+    .main-nav {
+      margin-top: 2em;
+      text-align: center; } }
+  @media screen and (max-width: 537px) {
+    .main-nav li {
+      width: 50%;
+      font-size: .8em; }
+      .main-nav li:nth-child(odd) {
+        border-right: 1px solid #eee; } }
 
 .pagination {
   text-align: center;
@@ -137,6 +145,8 @@ pre {
       color: #9236ff; }
       .post .post-meta a:hover, .post time a:hover {
         color: #bb83ff; }
+  .post .comments {
+    margin-top: 3em; }
   .post .asset a {
     text-align: center;
     margin: .8em 0 3em;

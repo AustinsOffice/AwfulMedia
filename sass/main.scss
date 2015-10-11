@@ -12,6 +12,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.1;
   padding: 0 1.5em;
+  @media screen and (max-width:750px) {
+    font-size: 1.1em;
+  }
 }
 
 a {
@@ -124,10 +127,7 @@ pre {
   font-family: "Open Sans", serif;
   text-align: right;
   margin-top: 6.725em;
-  @media screen and (max-width:991px) {
-    margin-top: 2em;
-    text-align: center;
-  }
+  padding: 0;
   ul {
     font-size: 1.5em;
     padding: 0;
@@ -137,9 +137,22 @@ pre {
   li {
     display: inline-block;
     a{
-      padding: .3em .8em;
       &:hover {
         background: none;
+      }
+    }
+  }
+  @media screen and (max-width:991px) {
+    margin-top: 2em;
+    text-align: center;
+  }
+  @media screen and (max-width:537px) {
+    li {
+      width: 50%;
+      font-size: .8em;
+      &:nth-child(odd) {
+
+        border-right: 1px solid #eee;
       }
     }
   }
@@ -181,21 +194,19 @@ pre {
       }
     }
   }
-
-  .asset {
-    img {
-
-    }
-
-    a {
-      text-align: center;
-      margin: .8em 0 3em;
-      font-size: 1.2em;
-      display: block;
-      padding: 1em;
-      box-shadow: 2px 2px 2px rgba(76, 76, 76, 0.36);
-    }
+.comments {
+  margin-top: 3em;
+}
+.asset {
+  a {
+    text-align: center;
+    margin: .8em 0 3em;
+    font-size: 1.2em;
+    display: block;
+    padding: 1em;
+    box-shadow: 2px 2px 2px rgba(76, 76, 76, 0.36);
   }
+}
 
   h1,h2:first-child {
     margin-top: .25em;
