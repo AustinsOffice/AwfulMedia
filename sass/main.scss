@@ -13,7 +13,7 @@ body {
   color: $text-color;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.1;
-  padding: 0 1.5em;
+  padding: 2.5em 1.5em;
   @media screen and (max-width:750px) {
     font-size: 1.1em;
   }
@@ -129,8 +129,6 @@ pre {
 
 }
 
-
-
 .main-nav {
   font-family: "Open Sans", serif;
   text-align: right;
@@ -193,7 +191,7 @@ pre {
 }
 
 .post {
-  margin-top: 4.5em;
+  margin-top: 6em;
   img {
     max-width: 100%;
     display: block;
