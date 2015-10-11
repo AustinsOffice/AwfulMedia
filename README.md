@@ -5,8 +5,4 @@ Back again with a completely new website. This time around, AwfulMedia doesn't t
 That's all I need... for now.
 
 ## Tools
-<<<<<<< HEAD
 Built on the [Ghost](https://github.com/TryGhost/Ghost) framework. [Handlebars](http://handlebarsjs.com/), [SASS](https://github.com/sass/sass), [Bootstrap 3.x](https://github.com/twbs/bootstrap), [Grunt](https://github.com/gruntjs/grunt), and about 4 gallons of coffee.
-=======
-Built on the [Ghost](https://github.com/TryGhost/Ghost) framework. [Handlebars](http://handlebarsjs.com/), [SASS](https://github.com/sass/sass), [Bootstrap 3.x](https://github.com/twbs/bootstrap), [Grunt](https://github.com/gruntjs/grunt), and about 4 gallons of coffee.
->>>>>>> c4d886ceedf3544467f132c542db9426575f7458
