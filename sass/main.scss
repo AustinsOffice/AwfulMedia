@@ -129,6 +129,8 @@ pre {
 
 }
 
+
+
 .main-nav {
   font-family: "Open Sans", serif;
   text-align: right;
@@ -176,8 +178,9 @@ pre {
 }
 
 .pagination {
+  display: block;
   text-align: center;
-  margin: 2em 0;
+  margin: 4em 0;
   padding: 0;
   .newer-posts {
     position: absolute;
@@ -235,7 +238,7 @@ footer.site-footer {
   text-align: center;
   &>.copyright {
     color: #7c7c7c;
-    font-size: .85em;
+    font-size: .95em;
     line-height: 1.5;
   }
 }

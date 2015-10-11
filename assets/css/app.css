@@ -135,8 +135,9 @@ pre {
       font-size: .75em; } }
 
 .pagination {
+  display: block;
   text-align: center;
-  margin: 2em 0;
+  margin: 4em 0;
   padding: 0; }
   .pagination .newer-posts {
     position: absolute;
@@ -178,7 +179,7 @@ footer.site-footer {
   text-align: center; }
   footer.site-footer > .copyright {
     color: #7c7c7c;
-    font-size: .85em;
+    font-size: .95em;
     line-height: 1.5; }
 
 /*# sourceMappingURL=app.css.map */
