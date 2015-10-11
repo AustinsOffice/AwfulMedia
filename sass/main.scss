@@ -119,6 +119,10 @@ pre {
   #logo {
     max-width: 175px;
     max-height: 225px;
+    @media screen and (max-width:750px) {
+      max-width: 125px;
+      max-height: 175px;
+    }
   }
 
 }
@@ -132,6 +136,7 @@ pre {
     font-size: 1.5em;
     padding: 0;
     margin: 0;
+    width: 100%;
     list-style-type: none;
   }
   li {
@@ -146,12 +151,11 @@ pre {
     margin-top: 2em;
     text-align: center;
   }
-  @media screen and (max-width:537px) {
+  @media screen and (max-width:400px) {
     li {
       width: 50%;
       font-size: .8em;
       &:nth-child(odd) {
-
         border-right: 1px solid #eee;
       }
     }
