@@ -1,13 +1,13 @@
 {{!< default}}
-<div class="row">
-    <div class="col-md-12">
-        <p class="alert alert-info" role="alert"><strong>Hey there!</strong> Looking for assets for my older Youtube videos? Well, I don't have those anymore. :( We're starting fresh here!</p>
-    </div>
-</div>
 {{#post}}
     <section class="post row">
         <article>
-            <h1 class="post-title col-md-12">{{title}}</h1>
+            <header>
+                <h1 class="post-title col-md-12">{{title}}</h1>
+            </header>
+            <div class="col-md-12">
+                <p class="alert alert-info" role="alert"><strong>Hey there!</strong> Looking for assets for my older Youtube videos? Well, I don't have those anymore. :( We're starting fresh here!</p>
+            </div>
             {{content}}
         </article>
     </section>

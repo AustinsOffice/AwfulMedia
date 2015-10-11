@@ -35,7 +35,7 @@ svg {
   max-height: 100%; }
 
 .alert {
-  margin: 2em 0 0;
+  margin: 0 0 1em;
   font-size: 1em;
   border: none; }
   .alert.alert-info {
