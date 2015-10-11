@@ -1,8 +1,10 @@
 *, *::after, *::before {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
+  outline: none;
   background: #ffffff;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
@@ -109,19 +111,28 @@ pre {
     width: 100%;
     list-style-type: none; }
   .main-nav li {
-    display: inline-block; }
-    .main-nav li a:hover {
-      background: none; }
+    display: inline-block;
+    padding: .2em; }
+    .main-nav li > a:hover {
+      color: white;
+      -webkit-transition: box-shadow .25s, background .25s;
+      -moz-transition: box-shadow .25s, background .25s;
+      -ms-transition: box-shadow .25s, background .25s;
+      -o-transition: box-shadow .25s, background .25s;
+      transition: box-shadow .25s, background .25s;
+      background: #ae69ff;
+      box-shadow: 0 0 0 5px #c99cff; }
   @media screen and (max-width: 991px) {
     .main-nav {
       margin-top: 2em;
-      text-align: center; } }
-  @media screen and (max-width: 400px) {
+      text-align: center; }
+      .main-nav li > a {
+        padding: .35em 0; }
+      .main-nav li {
+        width: 25%; } }
+  @media screen and (max-width: 450px) {
     .main-nav li {
-      width: 50%;
-      font-size: .8em; }
-      .main-nav li:nth-child(odd) {
-        border-right: 1px solid #eee; } }
+      font-size: .65em; } }
 
 .pagination {
   text-align: center;

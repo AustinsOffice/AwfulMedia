@@ -2,11 +2,13 @@
 @import 'variables';
 
 *, *::after, *::before {
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
+  outline: none;
   background: $background-color;
   color: $text-color;
   font-family: 'Open Sans', sans-serif;
@@ -141,23 +143,34 @@ pre {
   }
   li {
     display: inline-block;
-    a{
+    padding: .2em;
+    &>a{
       &:hover {
-        background: none;
+        color: lighten($nav-link-color-hover, 40%);
+        -webkit-transition: box-shadow .25s, background .25s;
+        -moz-transition: box-shadow .25s, background .25s;
+        -ms-transition: box-shadow .25s, background .25s;
+        -o-transition: box-shadow .25s, background .25s;
+        transition: box-shadow .25s, background .25s;
+        background: lighten($nav-link-color-hover,10%);
+        box-shadow: 0 0 0 5px lighten($nav-link-color-hover, 20%);
+
       }
     }
   }
   @media screen and (max-width:991px) {
     margin-top: 2em;
     text-align: center;
-  }
-  @media screen and (max-width:400px) {
+    li > a {
+      padding: .35em 0;
+    }
     li {
-      width: 50%;
-      font-size: .8em;
-      &:nth-child(odd) {
-        border-right: 1px solid #eee;
-      }
+      width: 25%;
+    }
+  }
+  @media screen and (max-width:450px) {
+    li {
+      font-size: .65em;
     }
   }
 }
