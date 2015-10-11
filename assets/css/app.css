@@ -132,7 +132,7 @@ pre {
         width: 25%; } }
   @media screen and (max-width: 450px) {
     .main-nav li {
-      font-size: .65em; } }
+      font-size: .75em; } }
 
 .pagination {
   text-align: center;
@@ -176,7 +176,9 @@ pre {
 footer.site-footer {
   margin: 4em 0;
   text-align: center; }
-  footer.site-footer .copyright {
+  footer.site-footer > .copyright {
+    color: #7c7c7c;
+    font-size: .85em;
     line-height: 1.5; }
 
 /*# sourceMappingURL=app.css.map */
