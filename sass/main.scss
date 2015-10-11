@@ -182,6 +182,21 @@ pre {
     }
   }
 
+  .asset {
+    img {
+
+    }
+
+    a {
+      text-align: center;
+      margin: .8em 0 3em;
+      font-size: 1.2em;
+      display: block;
+      padding: 1em;
+      box-shadow: 2px 2px 2px rgba(76, 76, 76, 0.36);
+    }
+  }
+
   h1,h2:first-child {
     margin-top: .25em;
   }
