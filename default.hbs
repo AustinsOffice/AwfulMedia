@@ -32,9 +32,20 @@
         </div>
         {{{body}}}
         <footer class="site-footer row">
-            <div class="copyright col-md-12">
+            <div id="mc_embed_signup" class="col-md-6">
+                <form action="//awfulmedia.us5.list-manage.com/subscribe/post?u=c89efb9b8217c071b845d27bc&amp;id=02bfa15d10" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                    <label for="mce-EMAIL">Newsletter</label>
+                    <div id="mc_embed_signup_scroll form-group">
+                        <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;"><input type="text" name="b_c89efb9b8217c071b845d27bc_02bfa15d10" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn">
+                    </div>
+                </form>
+            </div>
+            <div class="copyright col-md-6">
                 &copy; {{date format="YYYY"}} <a href="{{@blog.url}}">{{@blog.title}}</a><br>
-                Crafted with <a href="https://ghost.org">Ghost</a>. Brought to you on <a href="http://www.digitalocean.com/">DigitalOcean</a>.
+                Crafted with <a href="https://ghost.org">Ghost</a><br>Brought to you on <a href="http://www.digitalocean.com/">DigitalOcean</a>
             </div>
         </footer>
     </div>
