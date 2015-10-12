@@ -1,9 +1,10 @@
-<nav class="col-md-12 pagination">
-    {{#if prev}}
-        <a class="newer-posts pull-left" href="{{pageUrl prev}}">&larr; Previous</a>
-    {{/if}}
-    <span class="page-number">Page {{page}} of {{pages}}</span>
-    {{#if next}}
-        <a class="older-posts pull-right" href="{{pageUrl next}}">Next &rarr;</a>
-    {{/if}}
+<nav class="col-md-12">
+    <ul class="pager">
+        {{#if prev}}
+            <li class="previous" ><a class="accent-link" href="{{pageUrl prev}}">&larr; Previous</a></li>
+        {{/if}}
+        {{#if next}}
+            <li class="next"><a class="accent-link" href="{{pageUrl next}}">Next &rarr;</a></li>
+        {{/if}}
+    </ul>
 </nav>
