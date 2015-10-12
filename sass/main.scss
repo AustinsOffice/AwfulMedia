@@ -104,6 +104,10 @@ table, blockquote {
 
 pre {
   margin: 1.25em 0 3em;
+  code {
+    overflow-wrap: normal;
+    white-space: pre;
+  }
 }
 
 .container-fluid {

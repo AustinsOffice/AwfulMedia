@@ -78,6 +78,9 @@ table, blockquote {
 
 pre {
   margin: 1.25em 0 3em; }
+  pre code {
+    overflow-wrap: normal;
+    white-space: pre; }
 
 .container-fluid {
   margin-right: auto;
