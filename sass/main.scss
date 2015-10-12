@@ -8,12 +8,12 @@
 }
 
 body {
+  padding: 2em 0 0;
   outline: none;
   background: $background-color;
   color: $text-color;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.1;
-  padding: 2.5em 1.5em;
   @media screen and (max-width:750px) {
     font-size: 1.1em;
   }
@@ -111,7 +111,7 @@ pre {
   }
 }
 
-.container-fluid {
+.container {
   margin-right: auto;
   margin-left: auto;
   max-width: 750px; /* or 950px */
@@ -133,7 +133,20 @@ pre {
   }
 
 }
+.accent-link {
+    border-radius: 5px;
+    &:hover {
+      color: lighten($nav-link-color-hover, 55%);
+      -webkit-transition: all .25s;
+      -moz-transition: all .25s;
+      -ms-transition: all .25s;
+      -o-transition: all .25s;
+      transition: all .25s;
+      background: lighten($nav-link-color-hover,10%) !important;
+      box-shadow: 0 0 0 5px lighten($nav-link-color-hover, 20%);
 
+    }
+}
 .main-nav {
   font-family: "Open Sans", serif;
   text-align: right;
@@ -149,20 +162,6 @@ pre {
   li {
     display: inline-block;
     padding: .2em;
-    &>a{
-      border-radius: 5px;
-      &:hover {
-        color: lighten($nav-link-color-hover, 55%);
-        -webkit-transition: all .25s;
-        -moz-transition: all .25s;
-        -ms-transition: all .25s;
-        -o-transition: all .25s;
-        transition: all .25s;
-        background: lighten($nav-link-color-hover,10%);
-        box-shadow: 0 0 0 5px lighten($nav-link-color-hover, 20%);
-
-      }
-    }
   }
   @media screen and (max-width:991px) {
     margin-top: 2em;
@@ -181,18 +180,10 @@ pre {
   }
 }
 
-.pagination {
-  display: block;
-  text-align: center;
+.pager {
   margin: 4em 0;
-  padding: 0;
-  .newer-posts {
-    position: absolute;
-    left: 0;
-  }
-  .older-posts {
-    position: absolute;
-    right: 0;
+  li>a {
+    border: none;
   }
 }
 
@@ -253,14 +244,45 @@ pre {
   }
 }
 
-footer.site-footer {
-  margin: 4em 0;
+.site-footer {
+  margin: 4em 0 0;
+  color: #e1e0f3;
+  padding: 2em 0;
   text-align: left;
-  &>.copyright {
-    color: #7c7c7c;
+  background: #24242d;
+  a {
+    color: #B64926;
+    text-shadow: 2px 0 0 #131313;
+    &:hover {
+      text-shadow: 3px 1px 0 #0c0c0c;
+    }
+  }
+  .btn {
+    background: $nav-link-color-hover;
+
+    &:hover {
+      background: darken($nav-link-color-hover, 5%);
+      color: #fff;
+    }
+  }
+  .copyright {
     font-size: .95em;
     text-align: right;
     line-height: 1.5;
+  }
+  p {
+    font-size: 1em;
+  }
+  @media screen and (max-width:750px) {
+    .copyright {
+      text-align: center;
+    }
+    .btn {
+      width: 100%;
+    }
+    p {
+      text-align: center;
+    }
   }
 }
 
