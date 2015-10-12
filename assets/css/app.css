@@ -17,7 +17,7 @@ body {
 a {
   color: #313131; }
   a:hover {
-    color: #9236ff;
+    color: #468966;
     text-decoration: none; }
 
 p, ul, ol, pre, table {
@@ -27,9 +27,9 @@ p, ul, ol, pre, table {
 p {
   margin: 1.2em 0; }
   p a {
-    color: #9236ff; }
+    color: #468966; }
     p a:hover {
-      color: #bb83ff; }
+      color: #69b28c; }
 
 svg {
   max-height: 100%; }
@@ -39,7 +39,8 @@ svg {
   font-size: 1em;
   border: none; }
   .alert.alert-info {
-    background: #d9f1ff; }
+    color: #B64926;
+    background: #ecb4a3; }
 
 h1,
 h2,
@@ -116,15 +117,17 @@ pre {
   .main-nav li {
     display: inline-block;
     padding: .2em; }
-    .main-nav li > a:hover {
-      color: white;
-      -webkit-transition: box-shadow .25s, background .25s;
-      -moz-transition: box-shadow .25s, background .25s;
-      -ms-transition: box-shadow .25s, background .25s;
-      -o-transition: box-shadow .25s, background .25s;
-      transition: box-shadow .25s, background .25s;
-      background: #ae69ff;
-      box-shadow: 0 0 0 5px #c99cff; }
+    .main-nav li > a {
+      border-radius: 5px; }
+      .main-nav li > a:hover {
+        color: #f0f7f4;
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        -ms-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s;
+        background: #58aa7f;
+        box-shadow: 0 0 0 5px #7abb99; }
   @media screen and (max-width: 991px) {
     .main-nav {
       margin-top: 2em;
@@ -163,9 +166,9 @@ pre {
     margin: 0;
     color: #888888; }
     .post .post-meta a, .post time a {
-      color: #9236ff; }
+      color: #468966; }
       .post .post-meta a:hover, .post time a:hover {
-        color: #bb83ff; }
+        color: #69b28c; }
   .post .comments {
     margin-top: 3em; }
   .post .asset a {
@@ -174,7 +177,13 @@ pre {
     font-size: 1.2em;
     display: block;
     padding: 1em;
+    background: #468966;
+    border: 1px solid #35674d;
     box-shadow: 2px 2px 2px rgba(76, 76, 76, 0.36); }
+    .post .asset a:hover {
+      background: #58aa7f; }
+    .post .asset a:active {
+      background: #35674d; }
   .post h1, .post h2:first-child {
     margin-top: .25em; }
 
