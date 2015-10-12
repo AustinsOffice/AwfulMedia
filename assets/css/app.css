@@ -187,12 +187,25 @@ pre {
   .post h1, .post h2:first-child {
     margin-top: .25em; }
 
+@media screen and (max-width: 750px) {
+  #mc_embed_signup .btn {
+    margin-top: 1em; } }
+
 footer.site-footer {
   margin: 4em 0;
-  text-align: center; }
+  text-align: left; }
   footer.site-footer > .copyright {
     color: #7c7c7c;
     font-size: .95em;
+    text-align: right;
     line-height: 1.5; }
+
+.error-page {
+  text-align: center;
+  color: #555555; }
+  .error-page h1 {
+    color: #f0c6b8;
+    font-size: 15em;
+    margin: 0; }
 
 /*# sourceMappingURL=app.css.map */
