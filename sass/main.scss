@@ -51,7 +51,8 @@ svg {
   font-size: 1em;
   border: none;
   &.alert-info {
-    background: #d9f1ff;
+    color: #B64926;
+    background: lighten(#B64926, 35%);
   }
 }
 
@@ -149,13 +150,14 @@ pre {
     display: inline-block;
     padding: .2em;
     &>a{
+      border-radius: 5px;
       &:hover {
-        color: lighten($nav-link-color-hover, 40%);
-        -webkit-transition: box-shadow .25s, background .25s;
-        -moz-transition: box-shadow .25s, background .25s;
-        -ms-transition: box-shadow .25s, background .25s;
-        -o-transition: box-shadow .25s, background .25s;
-        transition: box-shadow .25s, background .25s;
+        color: lighten($nav-link-color-hover, 55%);
+        -webkit-transition: all .25s;
+        -moz-transition: all .25s;
+        -ms-transition: all .25s;
+        -o-transition: all .25s;
+        transition: all .25s;
         background: lighten($nav-link-color-hover,10%);
         box-shadow: 0 0 0 5px lighten($nav-link-color-hover, 20%);
 
@@ -227,7 +229,15 @@ pre {
     font-size: 1.2em;
     display: block;
     padding: 1em;
+    background: #468966;
+    border: 1px solid darken(#468966, 10%);
     box-shadow: 2px 2px 2px rgba(76, 76, 76, 0.36);
+    &:hover {
+      background: lighten(#468966, 10%);
+    }
+    &:active {
+      background: darken(#468966, 10%);
+    }
   }
 }
 
