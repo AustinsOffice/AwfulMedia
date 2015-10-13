@@ -247,7 +247,7 @@ pre {
 .site-footer {
   margin: 4em 0 0;
   color: #e1e0f3;
-  padding: 2em 0;
+  padding: 2em 15px;
   text-align: left;
   background: #24242d;
   a {
@@ -259,7 +259,6 @@ pre {
   }
   .btn {
     background: $nav-link-color-hover;
-
     &:hover {
       background: darken($nav-link-color-hover, 5%);
       color: #fff;
